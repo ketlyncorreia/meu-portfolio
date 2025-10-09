@@ -217,6 +217,16 @@ projetos-container {
     gap: 4rem;
 }
 
+.projeto-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.img-card {
+    width: 100%;
+    border-radius: .5rem;
+}
 
 .descricao-video h2 {
     font-size: 2rem;
@@ -260,6 +270,29 @@ projetos-container {
         align-items: flex-start;
     }
 } /* FIM min 768px */
+
+@media (min-width: 992px){
+    .projeto-card {
+        flex-direction: row;
+    }
+    .img-card1 {
+        width: 40%;
+       
+    }
+
+     
+    .img-card2 {
+        width: 40%;
+       
+    }
+
+    .img-card3 {
+        width: 40%;
+       
+    }
+}
+
+
 
 @media (min-width: 1400px) {
     h1 {
