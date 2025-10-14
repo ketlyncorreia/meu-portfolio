@@ -211,10 +211,10 @@ h1 {
     gap: 2rem;
 }
 
-projetos-container {
+.projetos-container {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 6rem;
 }
 
 .projeto-card {
@@ -227,6 +227,24 @@ projetos-container {
     width: 100%;
     border-radius: .5rem;
 }
+
+.card-bory {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    background: rgb(100, 100, 99);
+}
+
+.card-title{
+    color: ; /* cor texto */
+    font-size:  ; /* tamanho texto */
+    font-weight: ; /* largura das letras */
+    font-family: ; /* estilo das fontes */               /* criar para cade um e comparar no html para o css */
+}
+    
+
 
 .descricao-video h2 {
     font-size: 2rem;
@@ -287,10 +305,16 @@ projetos-container {
     }
 
     .img-card3 {
-        width: 40%;
+        width: 40%; /* tamanho das fotos */
        
     }
+    .reverse-card {
+        /* espelhar */
+        flex-direction: row-reverse;
+    }
+
 }
+
 
 
 
@@ -306,5 +330,8 @@ projetos-container {
     }
 
 }
+
+
+
 
 
