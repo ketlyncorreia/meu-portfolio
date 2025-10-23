@@ -6,21 +6,24 @@
 /* raiz */
 :root,
 :root[data-theme='dark'] {
-    --cor-fundo: #1b1b1b;
-    --cor-texto: #e9e9e9;
-    --menu-link: #e9e9e9;
-
-    --cor-borda: #e9e9e9;
+     --cor-fundo: #312e2b;
+  --cor-texto: #E6D5C3;
+  --cor-menu-link: #D4B292;
+  --cor-borda: #3A2E25;
+  --cor-hover-icone: #E6B980;
 
 }
 
 /* Fundo Branco */
 :root[data-theme='light'] {
-    --cor-fundo: #e9e9e9;
-    --cor-texto: #1b1b1b;
-    --menu-link: #1b1b1b;
+     --cor-fundo:  #E8E0D4;
+  --cor-texto: #2B2118;
+  --cor-menu-link: #5C4033;
+  --cor-borda: #66605b;
+  --cor-hover-icone: #A47148;
+    
 
-    --cor-borda: #1b1b1b;
+
 
 }
 
@@ -207,7 +210,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Playfair Display", serif;
+    font-family:  "Dancing Script", cursive;
     font-size: 2rem;
     text-transform: uppercase;
     text-align: 0rem;
@@ -217,7 +220,7 @@ h2 {
 
 h3 {
     font-size: 1.55rem;
-    font-family: "Oswald", sans-serif;
+    font-family: "Roboto Slab", serif;
     font-weight: bold;
     /* font-style: normal; */
 }
@@ -236,7 +239,7 @@ h3 {
 .descricao-video {
     display: flex;
     flex-direction: column;
-    background: #343739;
+    background: #D6CFC7;
     padding: 6.25rem 1rem 2rem;
     align-items: center;
     justify-content: flex-start;
@@ -308,11 +311,40 @@ h3 {
     margin-right: 8px;
 }
 
+.card-item i:hover {
+    color: var(--cor-hover-icone);
+    transition: .5s ease-in-out;
+}
+
+.redes-sociais {
+    font-size: 1.4rem;
+}
 
 
+.redes-sociais i:hover {
+     color: var(--cor-hover-icone);
+    transition: .5s ease-in-out;
+}
 
+.redes-sociais .instagram:hover {
+    color: #E1306C;
+    font-size: 5rem;
+}
 
+.redes-sociais .github:hover {
+    color:  #333333;
+    font-size: 5rem;
+}
 
+.redes-sociais .facebook:hover {
+    color:  #1877F2;
+    font-size: 5rem;
+}
+
+.redes-sociais .telegram:hover {
+    color:  #0088cc;
+    font-size: 5rem;
+}
 
 
 
