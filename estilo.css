@@ -328,22 +328,38 @@ h3 {
 
 .redes-sociais .instagram:hover {
     color: #E1306C;
-    font-size: 5rem;
+    font-size: 1rem;
 }
 
 .redes-sociais .github:hover {
     color:  #333333;
-    font-size: 5rem;
+    font-size: 1rem;
 }
 
 .redes-sociais .facebook:hover {
     color:  #1877F2;
-    font-size: 5rem;
+    font-size: 1rem;
 }
 
 .redes-sociais .telegram:hover {
     color:  #0088cc;
-    font-size: 5rem;
+    font-size: 1rem;
+}
+
+.col1{
+  background-color:#D2B48C;
+}
+
+.col2{
+  background-color: #8B4513;
+}
+
+.col3{
+    background: #5C4033;
+}
+
+.col4{
+    background: #66605b;
 }
 
 
