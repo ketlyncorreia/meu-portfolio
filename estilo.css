@@ -43,7 +43,8 @@ html[data-theme='light'] .logo {
 }
 
 html {
-    scroll-behavior: smooth;  
+    scroll-behavior: smooth;
+    font-size: 62.5%;  
 }
 
 body {
@@ -75,7 +76,7 @@ header {
     /* Voltar */
     z-index: 9999;
     /* Camadas */
-    padding: .5rem 1rem;
+    padding: 5rem 1rem;
 }
 
 .menu-desktop {
@@ -106,7 +107,7 @@ header {
 
 .menu-text {
     color: var(--menu-link);
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
 }
 
@@ -189,6 +190,7 @@ botao menu mobile  ----- */
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-size: 1.6rem;
 }
 
 #home {
@@ -202,6 +204,7 @@ botao menu mobile  ----- */
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    padding-top: 2,5rem;
 }
 
 h1 {
@@ -346,22 +349,24 @@ h3 {
     font-size: 1rem;
 }
 
-.col1{
-  background-color:#D2B48C;
+  /* sobre */
+
+.sobre{
+    flex-direction: column;
+    gap: 1.5rem;
+}
+/* foto retangular */
+.sobre-logo {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid red;
+    border: 2px solid var(--cor-borda);
 }
 
-.col2{
-  background-color: #8B4513;
+.sobre-descricao p {
+    text-align: justify;
+    font-size: 1.8rem;
 }
-
-.col3{
-    background: #5C4033;
-}
-
-.col4{
-    background: #66605b;
-}
-
 
 
 
