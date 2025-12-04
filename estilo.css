@@ -7,9 +7,10 @@
 :root,
 :root[data-theme='dark'] {
      --cor-fundo: #312e2b;
-  --cor-texto: #E6D5C3;
-  --cor-menu-link: #D4B292;
-  --cor-borda: #3A2E25;
+     --cor-fundo-secundaria: rgb(122, 118, 118);
+  --cor-texto: #cfc1b2;
+  --cor-menu-link: #6b6158;
+  --cor-borda: #837870;
   --cor-hover-icone: #E6B980;
 
 }
@@ -17,6 +18,7 @@
 /* Fundo Branco */
 :root[data-theme='light'] {
      --cor-fundo:  #E8E0D4;
+     --cor-fundo-secundaria: rgb(161, 148, 148);
   --cor-texto: #2B2118;
   --cor-menu-link: #5C4033;
   --cor-borda: #66605b;
@@ -208,17 +210,17 @@ botao menu mobile  ----- */
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem; /* 35px */
     font-family:  "Dancing Script", cursive;
 }
 
 h2 {
     font-family:  "Dancing Script", cursive;
-    font-size: 2rem;
+    font-size: 2.8rem;
     text-transform: uppercase;
     text-align: 0rem;
     letter-spacing: 2px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 h3 {
@@ -227,6 +229,11 @@ h3 {
     font-weight: bold;
     /* font-style: normal; */
 }
+
+p {
+    font-size: 1.8rem; /* igual a 18px */
+}
+    
 
 .video iframe {
     aspect-ratio: 16/9;
@@ -250,7 +257,7 @@ h3 {
 }
 
 .descricao-video h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-transform: uppercase;
     margin-top: -2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -292,7 +299,7 @@ h3 {
 .card-titulo {
     color: var(--cor-texto);
     /* Cor do Texto */
-    font-size: 1,5rem;
+    font-size: 2.4rem; /* 24px */
     /* Tamanho texto */
     font-weight: 400;
     /* largura das letras */
@@ -308,10 +315,12 @@ h3 {
 
 .card-item {
     margin-bottom: .8rem;
+    font-size: 1.6rem;
 }
 
 .card-item i {
     margin-right: 8px;
+    font-size: 1.9rem;
 }
 
 .card-item i:hover {
@@ -320,7 +329,7 @@ h3 {
 }
 
 .redes-sociais {
-    font-size: 1.4rem;
+    font-size: 1.8rem; /* virou 18px */
 }
 
 
@@ -368,7 +377,32 @@ h3 {
     font-size: 1.8rem;
 }
 
+/* footer */
+footer {
+    /* background: var(--cor-fundo-secundaria); */
 
+    border-top: 1px solid var(--cor-borda);
+}
+
+footer p {
+    padding: 1.2rem 6rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+}
+
+footer i {
+    color: #9e6739;
+}
+
+footer a {
+    color: #9e6739;
+}
+
+/* hover e sempre que passar o mouse por cima */
+footer a:hover {
+color: #9e6739;
+transition: all 0.3s ease-in-out;
+}
 
 /* Medidas Responsivas */
 @media (min-width: 768px) {
@@ -393,15 +427,15 @@ h3 {
     }
 
     h1 {
-        font-size: 5rem;
+        font-size: 5.2rem;
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     h3 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     #home,
@@ -420,6 +454,11 @@ h3 {
 /* FIM min 768px */
 
 @media (min-width: 992px) {
+    
+    p {
+        font-size: 1.8rem;
+    }
+
     .projeto-card {
         flex-direction: row;
     }
@@ -442,22 +481,22 @@ h3 {
 
 @media (min-width: 1200px) {
     h2 {
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
 }
 
 
 @media (min-width: 1400px) {
     h1 {
-        font-size: 6.5rem;
+        font-size: 7.5rem;
     }
 
     h2 {
-        font-size: 4.5rem;
+        font-size: 5.5rem;
     }
 
     h3 {
-        font-size: 3.25rem;
+        font-size: 4rem;
     }
 
     .descricao-video,
